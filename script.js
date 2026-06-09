@@ -1,4 +1,4 @@
- let current = "";
+let current = "";
 
 /* إظهار أداة */
 function showTool(id) {
@@ -6,7 +6,16 @@ function showTool(id) {
     tool.classList.add("hidden");
   });
 
-  document.getElementById(id).classList.remove("hidden");
+  const selectedTool = document.getElementById(id);
+
+  selectedTool.classList.remove("hidden");
+
+  setTimeout(() => {
+    selectedTool.scrollIntoView({
+      behavior: "smooth",
+      block: "start"
+    });
+  }, 100);
 }
 
 /* الحاسبة */
@@ -96,10 +105,14 @@ function goHome() {
     tool.classList.add("hidden");
   });
 
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  });
+
   current = "";
   document.getElementById("screen").innerText = "0";
 }
-
 
 /* BMI */
 function calculateBMI() {
@@ -134,7 +147,7 @@ function calculateBMI() {
     `BMI: ${bmi.toFixed(1)} - ${status}`;
 }
 
- /* ⏰ Timer */
+/* ⏰ Timer */
 
 let timer;
 let remaining = 0;
@@ -175,4 +188,4 @@ function startTimer() {
 
 function stopTimer() {
   clearInterval(timer);
-}
+} 
