@@ -1,1 +1,158 @@
+ body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #0b1220;
+  color: white;
+}
 
+/* Header */
+header {
+  text-align: center;
+  padding: 25px;
+  background: linear-gradient(45deg, #4f46e5, #7c3aed);
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 22px;
+}
+
+header p {
+  opacity: 0.8;
+}
+
+header button {
+  background: rgba(255,255,255,0.2);
+  margin-bottom: 10px;
+}
+
+header button:hover {
+  background: rgba(255,255,255,0.3);
+}
+
+/* الصفحة الرئيسية */
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  padding: 15px;
+}
+
+/* البطاقات */
+.card {
+  background: rgba(255,255,255,0.06);
+  padding: 25px;
+  border-radius: 16px;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.3s;
+  border: 1px solid rgba(255,255,255,0.08);
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  background: rgba(255,255,255,0.12);
+}
+
+/* الأدوات */
+.tool {
+  background: rgba(255,255,255,0.06);
+  padding: 18px;
+  margin: 20px auto;
+  border-radius: 15px;
+  width: 90%;
+  text-align: center;
+  border: 1px solid rgba(255,255,255,0.08);
+}
+
+/* Inputs */
+input {
+  width: 85%;
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+}
+
+/* Buttons */
+button {
+  padding: 10px 18px;
+  border: none;
+  border-radius: 10px;
+  background: #3b82f6;
+  color: white;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+button:hover {
+  background: #2563eb;
+}
+
+/* شاشة الحاسبة */
+.screen {
+  background: black;
+  color: #00ff88;
+  font-size: 28px;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: right;
+  margin-bottom: 10px;
+}
+
+/* أزرار الحاسبة */
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.buttons button {
+  padding: 15px;
+  font-size: 18px;
+  background: #1f2937;
+}
+
+.buttons button:hover {
+  background: #374151;
+}
+
+.clear {
+  grid-column: span 4;
+  background: #ef4444 !important;
+}
+
+/* النتائج */
+#pass,
+#result,
+#ageResult,
+#bmiResult {
+  margin-top: 15px;
+  font-size: 18px;
+  font-weight: bold;
+  word-break: break-word;
+}
+
+#timerResult {
+  margin-top: 15px;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+/* الهواتف */
+@media (max-width: 600px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+
+  .tool {
+    width: 95%;
+  }
+
+  .screen {
+    font-size: 24px;
+  }
+}
