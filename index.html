@@ -1,5 +1,3 @@
- 
-
  <!DOCTYPE html>
 <html lang="ar">
 <head>
@@ -12,150 +10,37 @@
 <body>
 
 <header>
-  <button onclick="goHome()" style="margin-top:10px;">
-    🏠 الرئيسية
-  </button>
-
   <h1>🧰 الأدوات اليومية</h1>
   <p>كل أدواتك في مكان واحد</p>
 </header>
 
 <div class="container">
-  <div class="card" onclick="showTool('calc')">🧮 الحاسبة</div>
-  <div class="card" onclick="showTool('currency')">💱 تحويل العملات</div>
-  <div class="card" onclick="showTool('age')">🎂 حساب العمر</div>
-  <div class="card" onclick="showTool('password')">🔐 مولد كلمة مرور</div>
-  <div class="card" onclick="showTool('bmi')">
-  📊 BMI
-</div>
- <div class="card" onclick="showTool('timer')">
-  ⏰ المؤقت
-</div>
-</div>
 
-<!-- الأدوات -->
-<div id="toolBox" class="tool-box">
-
-  <!-- الحاسبة -->
-  <div id="calc" class="tool hidden">
-
-    <h2>🧮 الحاسبة</h2>
-
-    <div id="screen" class="screen">0</div>
-
-    <div class="buttons">
-
-      <button onclick="press('7')">7</button>
-      <button onclick="press('8')">8</button>
-      <button onclick="press('9')">9</button>
-      <button onclick="press('/')">÷</button>
-
-      <button onclick="press('4')">4</button>
-      <button onclick="press('5')">5</button>
-      <button onclick="press('6')">6</button>
-      <button onclick="press('*')">×</button>
-
-      <button onclick="press('1')">1</button>
-      <button onclick="press('2')">2</button>
-      <button onclick="press('3')">3</button>
-      <button onclick="press('-')">-</button>
-
-      <button onclick="press('0')">0</button>
-      <button onclick="press('.')">.</button>
-      <button onclick="calc()">=</button>
-      <button onclick="press('+')">+</button>
-
-      <button onclick="clearScreen()" class="clear">
-        C
-      </button>
-
-    </div>
-
+  <div class="card" onclick="location.href='calculator.html'">
+    🧮 الحاسبة
   </div>
 
-  <!-- تحويل العملات -->
-  <div id="currency" class="tool hidden">
-    <h2>💱 تحويل الدولار إلى الدرهم</h2>
-
-    <input id="usd" type="number" placeholder="أدخل المبلغ بالدولار">
-
-    <button onclick="convert()">تحويل</button>
-
-    <p id="result"></p>
+  <div class="card" onclick="location.href='currency.html'">
+    💱 تحويل العملات
   </div>
 
-  <!-- حساب العمر -->
-  <div id="age" class="tool hidden">
-    <h2>🎂 حساب العمر</h2>
-
-    <input id="year" type="number" placeholder="أدخل سنة الميلاد">
-
-    <button onclick="age()">حساب</button>
-
-    <p id="ageResult"></p>
+  <div class="card" onclick="location.href='age.html'">
+    🎂 حساب العمر
   </div>
 
-  <!-- مولد كلمة المرور -->
-  <div id="password" class="tool hidden">
-
-    <h2>🔐 مولد كلمة مرور قوية</h2>
-
-    <button onclick="generate()">إنشاء</button>
-
-    <button onclick="copyPassword()">📋 نسخ</button>
-
-    <p id="pass"></p>
-
+  <div class="card" onclick="location.href='password.html'">
+    🔐 مولد كلمة مرور
   </div>
 
-  <!-- Timer -->
-<div id="timer" class="tool hidden">
+  <div class="card" onclick="location.href='bmi.html'">
+    📊 BMI
+  </div>
 
-  <h2>⏰ المؤقت</h2>
-
-  <input
-    id="seconds"
-    type="number"
-    placeholder="عدد الثواني"
-  >
-
-  <button onclick="startTimer()">▶️ بدء</button>
-
-  <button onclick="stopTimer()">⏹️ إيقاف</button>
-
-  <p id="timerResult">0</p>
+  <div class="card" onclick="location.href='timer.html'">
+    ⏰ المؤقت
+  </div>
 
 </div>
-
-  <!-- BMI -->
-<div id="bmi" class="tool hidden">
-
-  <h2>📊 حساب مؤشر كتلة الجسم</h2>
-
-  <input
-    id="weight"
-    type="number"
-    placeholder="الوزن بالكيلوغرام"
-  >
-
-  <input
-    id="height"
-    type="number"
-    placeholder="الطول بالمتر (مثال: 1.75)"
-    step="0.01"
-  >
-
-  <button onclick="calculateBMI()">
-    حساب
-  </button>
-
-  <p id="bmiResult"></p>
-
-</div>
-
-</div>
-
-<script src="script.js"></script>
 
 </body>
-</html>
+</html> 
