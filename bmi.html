@@ -1,1 +1,47 @@
+ <!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BMI</title>
+<link rel="stylesheet" href="style.css">
+</head>
 
+<body>
+
+<header>
+  <button onclick="location.href='index.html'">
+    🏠 الرئيسية
+  </button>
+
+  <h1>📊 حساب BMI</h1>
+  <p>حساب مؤشر كتلة الجسم</p>
+</header>
+
+<div class="tool">
+
+  <input
+    id="weight"
+    type="number"
+    placeholder="الوزن بالكيلوغرام"
+  >
+
+  <input
+    id="height"
+    type="number"
+    placeholder="الطول بالمتر (مثال: 1.75)"
+    step="0.01"
+  >
+
+  <button onclick="calculateBMI()">
+    حساب
+  </button>
+
+  <p id="bmiResult"></p>
+
+</div>
+
+<script src="bmi.js"></script>
+
+</body>
+</html>
