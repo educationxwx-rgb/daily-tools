@@ -1,6 +1,6 @@
-body {
+  body {
   margin: 0;
-  font-family: Arial;
+  font-family: Arial, sans-serif;
   background: #0b1220;
   color: white;
 }
@@ -23,7 +23,16 @@ header p {
   opacity: 0.8;
 }
 
-/* Grid */
+header button {
+  background: rgba(255,255,255,0.2);
+  margin-bottom: 10px;
+}
+
+header button:hover {
+  background: rgba(255,255,255,0.3);
+}
+
+/* الصفحة الرئيسية */
 .container {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -31,7 +40,7 @@ header p {
   padding: 15px;
 }
 
-/* Cards */
+/* البطاقات */
 .card {
   background: rgba(255,255,255,0.06);
   padding: 25px;
@@ -47,15 +56,11 @@ header p {
   background: rgba(255,255,255,0.12);
 }
 
-/* Tool box */
-.tool-box {
-  padding: 15px;
-}
-
+/* الأدوات */
 .tool {
   background: rgba(255,255,255,0.06);
   padding: 18px;
-  margin: 10px auto;
+  margin: 20px auto;
   border-radius: 15px;
   width: 90%;
   text-align: center;
@@ -87,12 +92,7 @@ button:hover {
   background: #2563eb;
 }
 
-/* Hidden */
-.hidden {
-  display: none;
-}
-
-/* 🧮 Calculator */
+/* شاشة الحاسبة */
 .screen {
   background: black;
   color: #00ff88;
@@ -103,6 +103,7 @@ button:hover {
   margin-bottom: 10px;
 }
 
+/* أزرار الحاسبة */
 .buttons {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -124,25 +125,24 @@ button:hover {
   background: #ef4444 !important;
 }
 
+/* النتائج */
 #pass,
 #result,
-#ageResult {
+#ageResult,
+#bmiResult {
   margin-top: 15px;
   font-size: 18px;
   font-weight: bold;
   word-break: break-word;
 }
 
-header button {
-  background: rgba(255,255,255,0.2);
-  margin-bottom: 10px;
+#timerResult {
+  margin-top: 15px;
+  font-size: 28px;
+  font-weight: bold;
 }
 
-header button:hover {
-  background: rgba(255,255,255,0.3);
-}
-
-/* تحسين العرض على الهواتف */
+/* الهواتف */
 @media (max-width: 600px) {
   .container {
     grid-template-columns: 1fr;
@@ -155,16 +155,4 @@ header button:hover {
   .screen {
     font-size: 24px;
   }
-}
-
-#bmiResult {
-  margin-top: 15px;
-  font-size: 18px;
-  font-weight: bold;
-}
-
-#timerResult {
-  margin-top: 15px;
-  font-size: 28px;
-  font-weight: bold;
 }
