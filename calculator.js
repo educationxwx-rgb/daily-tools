@@ -1,4 +1,4 @@
-let current = "";
+ let current = "";
 
 function press(val) {
   current += val;
