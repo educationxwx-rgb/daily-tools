@@ -1,1 +1,41 @@
 
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>تحويل العملات</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+  <button onclick="location.href='index.html'">
+    🏠 الرئيسية
+  </button>
+
+  <h1>💱 تحويل العملات</h1>
+  <p>تحويل الدولار إلى الدرهم</p>
+</header>
+
+<div class="tool">
+
+  <input
+    id="usd"
+    type="number"
+    placeholder="أدخل المبلغ بالدولار"
+  >
+
+  <button onclick="convert()">
+    تحويل
+  </button>
+
+  <p id="result"></p>
+
+</div>
+
+<script src="currency.js"></script>
+
+</body>
+</html>
