@@ -1,21 +1,21 @@
-let current = "";
+ let screen = document.getElementById("screen");
+let expression = "";
 
-function press(val) {
-  current += val;
-  document.getElementById("screen").innerText = current;
+function press(value) {
+  expression += value;
+  screen.innerText = expression;
 }
 
 function calc() {
   try {
-    current = eval(current).toString();
-    document.getElementById("screen").innerText = current;
+    expression = eval(expression);
+    screen.innerText = expression;
   } catch {
-    document.getElementById("screen").innerText = "Error";
-    current = "";
+    screen.innerText = "خطأ";
   }
 }
 
 function clearScreen() {
-  current = "";
-  document.getElementById("screen").innerText = "0";
+  expression = "";
+  screen.innerText = "0";
 }
