@@ -143,7 +143,7 @@ button:hover {
 }
 
 
-.privacy-btn{
+.privacy-btn a{
     display:inline-block;
     padding:10px 20px;
     background:#3498db;
@@ -154,7 +154,7 @@ button:hover {
     margin:10px;
 }
 
-.privacy-btn:hover{
+.privacy-btn:hover a{
     background:#2980b9;
 }
 
