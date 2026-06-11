@@ -1,1 +1,45 @@
+ 
+ <!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>المؤقت</title>
+<link rel="stylesheet" href="style.css">
+</head>
 
+<body>
+
+<header>
+  <button onclick="location.href='index.html'">
+    🏠 الرئيسية
+  </button>
+
+  <h1>⏰ المؤقت</h1>
+  <p>عداد تنازلي بسيط</p>
+</header>
+
+<div class="tool">
+
+  <input
+    id="seconds"
+    type="number"
+    placeholder="عدد الثواني"
+  >
+
+  <button onclick="startTimer()">
+    ▶️ بدء
+  </button>
+
+  <button onclick="stopTimer()">
+    ⏹️ إيقاف
+  </button>
+
+  <p id="timerResult">0</p>
+
+</div>
+
+<script src="timer.js"></script>
+
+</body>
+</html>
