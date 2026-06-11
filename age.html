@@ -1,1 +1,40 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>حساب العمر</title>
+<link rel="stylesheet" href="style.css">
+</head>
 
+<body>
+
+<header>
+  <button onclick="location.href='index.html'">
+    🏠 الرئيسية
+  </button>
+
+  <h1>🎂 حساب العمر</h1>
+  <p>احسب عمرك بسهولة</p>
+</header>
+
+<div class="tool">
+
+  <input
+    id="year"
+    type="number"
+    placeholder="أدخل سنة الميلاد"
+  >
+
+  <button onclick="age()">
+    حساب العمر
+  </button>
+
+  <p id="ageResult"></p>
+
+</div>
+
+<script src="age.js"></script>
+
+</body>
+</html>
